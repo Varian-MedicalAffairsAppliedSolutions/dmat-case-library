@@ -16,6 +16,10 @@
     h1 { margin: 28px 0 18px; }
     .banner { padding: 12px 16px; border: 2px solid #b4232f; border-left-width: 6px; color: #7a1d28; background: #fff2f2; font-weight: 700; }
     .description { margin: 0 0 32px; }
+    .technique-figure { margin: 0 0 32px; }
+    .technique-figure img { display: block; width: 100%; height: auto; }
+    .technique-figure figcaption { margin-top: 10px; }
+    .technique-figure a { color: #a94700; text-underline-offset: 3px; }
     .placeholder { padding: 24px; border: 1px solid #dedede; border-top: 3px solid #ec6602; background: #fafafa; }
     .placeholder h2 { margin: 0 0 10px; }
     .placeholder p { margin: 0; }
@@ -31,6 +35,12 @@
       <h1>DMAT Case Library</h1>
     </header>
     <p class="description">The DMAT plan library presents examples across anatomical sites, prescription schedules, beam energies, and modulation settings, alongside reference plans where available. Reports include planning parameters, field geometry, dose distributions, dose–volume histograms, selected dosimetric endpoints, and delivery-time data. The examples document technical planning characteristics and do not establish clinical benefit or comparative superiority.</p>
+    <figure class="technique-figure">
+      <a href="assets/dmat-modulation-comparison.png" aria-label="Open the DMAT modulation comparison figure at full size">
+        <img src="assets/dmat-modulation-comparison.png" width="1380" height="1564" alt="Figure 3: dose distributions for head-and-neck, lung SBRT, and prostate SBRT cases across modulation levels −3 to +3, with delivery times in seconds and monitor units per Gy. The supplied journal caption is included in the image." decoding="async">
+      </a>
+      <figcaption><a href="assets/dmat-modulation-comparison.png">Open full-size figure</a></figcaption>
+    </figure>
     <section class="placeholder" aria-labelledby="preview-title">
       <h2 id="preview-title">Landing page placeholder</h2>
       <p>This page is provided for website development and integration testing. Individual case reports are not included in this preview.</p>
