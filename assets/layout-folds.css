@@ -1,0 +1,68 @@
+/* One disclosure marker for every main section and nested detail. */
+.srs-layout-preview details > summary {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  cursor: pointer;
+  list-style: none;
+}
+.srs-layout-preview details > summary::-webkit-details-marker { display: none; }
+.srs-layout-preview details > summary::marker { content: ''; }
+.srs-layout-preview details > summary::before {
+  content: '';
+  display: block;
+  width: .45rem;
+  height: .45rem;
+  flex: 0 0 .45rem;
+  box-sizing: border-box;
+  margin: 0 .15rem 0 0;
+  border-right: 2px solid #ec6602;
+  border-bottom: 2px solid #ec6602;
+  transform: rotate(-45deg);
+  grid-column: auto;
+  grid-row: auto;
+}
+.srs-layout-preview details[open] > summary::before {
+  content: '';
+  transform: rotate(45deg);
+}
+.srs-layout-preview details > summary > h2,
+.srs-layout-preview details > summary > h3 {
+  margin: .6rem 0;
+  min-width: 0;
+}
+.srs-layout-preview details > summary > .report-fold-state { display: none; }
+.srs-layout-preview details > summary:focus-visible {
+  outline: 2px solid #ec6602;
+  outline-offset: 4px;
+}
+
+/* Separate the SRS plot footer from the next comparison section. */
+.srs-layout-preview [data-report-subsection="srs-metrics"] > .srs-plots + div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1.1rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+.srs-layout-preview [data-report-subsection="srs-metrics"] > .srs-plots + div > span {
+  margin: 0 !important;
+}
+.srs-layout-preview [data-report-subsection="srs-metrics"] > .srs-plots + div > span:last-child {
+  flex-basis: 100%;
+  margin-top: .25rem !important;
+}
+.srs-layout-preview .srs-metrics-table {
+  margin-top: 1.25rem;
+  padding-bottom: .75rem;
+}
+.srs-layout-preview .srs-metrics-table > summary {
+  padding: .65rem 0;
+  line-height: 1.5;
+}
+.srs-layout-preview section[data-report-section="quality-time"] {
+  margin-top: 2rem;
+}
+
+.srs-layout-preview .report-foldable>summary h2{flex:1}.srs-layout-preview .report-foldable>.report-fold-content{padding:12px 0}.srs-layout-preview .report-foldable>summary .report-fold-preview{display:none}.srs-layout-preview .report-callout{border:1px solid #fda15d;border-left:4px solid #ec6602;background:#fff6ef;padding:10px 12px}.srs-layout-preview section{margin-bottom:18px}.srs-layout-preview .report-foldable>.report-fold-content>details{margin:14px 0}

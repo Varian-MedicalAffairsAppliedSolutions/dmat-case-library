@@ -1,0 +1,6 @@
+.dvh-structure-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px}
+.dvh-structure-actions p{margin:0;font-size:12px;line-height:1.4;color:#52647a}
+.dvh-structure-actions button{flex:none;min-height:36px;padding:6px 12px;border:1px solid #ec6602;background:#fff;color:#8b3900;font:inherit;font-size:12px;cursor:pointer}
+.dvh-structure-actions button:hover{background:#fff0e4}
+.dvh-structure-actions button:focus-visible{outline:2px solid #111;outline-offset:2px}
+@media(pointer:coarse){.dvh-structure-actions button{min-height:44px}}

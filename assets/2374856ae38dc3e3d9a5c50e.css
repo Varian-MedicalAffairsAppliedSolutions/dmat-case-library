@@ -1,0 +1,1 @@
+.dose-load-status{display:flex;align-items:center;gap:12px;padding:10px 0;font-size:14px}.dose-load-status button{font:inherit;padding:6px 12px;cursor:pointer}.dose-volume-viewer[aria-busy="true"] .dose-volume-image{opacity:.65}.dose-volume-image[hidden]{display:none}.dose-volume-viewport{min-height:180px}.dose-load-status [hidden]{display:none!important}

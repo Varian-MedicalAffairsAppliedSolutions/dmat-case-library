@@ -1,0 +1,55 @@
+:is(.web-report,.case-report){font-size:11pt!important;line-height:1.5!important}:is(.web-report,.case-report) :is(p,span,small,strong,b,em,a,label,legend,button,input,output,select,td,th,li,summary,figcaption,div){font-size:11pt!important;line-height:1.5!important}:is(.web-report,.case-report) :is(h1,h2,h3,h4,h5,h6),:is(.web-report,.case-report) :is(h1,h2,h3,h4,h5,h6) *{font-size:16pt!important;line-height:1.25!important}:is(.web-report,.case-report) .subtitle{font-size:11pt!important}:is(.web-report,.case-report) table{font-size:11pt!important;line-height:1.5!important}:is(.web-report,.case-report) :is(.table-scroll,.field-summary-scroll,.efficiency-table-wrap){max-width:100%;overflow-x:auto}:is(.web-report,.case-report) .dosimetric-table{width:max-content!important;min-width:100%!important;table-layout:auto!important}:is(.web-report,.case-report) .dosimetric-table :is(td,th){padding:8px 10px!important}:is(.web-report,.case-report) .dose-volume-overlay{max-width:75%}:is(.web-report,.case-report) .dose-volume-overlay :is(output,span){font-size:11pt!important}:is(.web-report,.case-report) .clinical-goal-comparison{overflow-x:auto}
+.two-size-endpoint-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.two-size-endpoint-grid>div{min-width:0}.two-size-endpoint-grid p{margin:6px 0 12px}.two-size-endpoint-grid svg{width:100%;height:auto}@media(max-width:1100px){.two-size-endpoint-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.two-size-endpoint-grid{grid-template-columns:1fr}}
+:is(.web-report,.case-report) .dvh-toggle-panel{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}:is(.web-report,.case-report) .dvh-toggle-panel fieldset{min-width:0;max-width:100%}:is(.web-report,.case-report) .dvh-plan-toggles{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:10px 24px}:is(.web-report,.case-report) .dvh-plan-toggles label{display:flex;align-items:center;gap:6px;white-space:nowrap;min-width:0}:is(.web-report,.case-report) .dvh-plan-toggles label>span{white-space:nowrap;overflow-wrap:normal;word-break:normal}:is(.web-report,.case-report) .dvh-plan-toggles label>input,:is(.web-report,.case-report) .dvh-plan-toggles label>i{flex-shrink:0}:is(.web-report,.case-report) .dvh-plan-toggles label>i{display:inline-block;width:24px;min-width:24px}
+.two-size-endpoint-grid>div>strong{display:block;text-align:center}.two-size-endpoint-grid>div>p{text-align:center}
+:is(.web-report,.case-report) section[data-report-section="technical-details"] table,:is(.web-report,.case-report) section[data-report-section="technical-details"] table *{font-size:10pt!important;line-height:1.5!important}
+:is(.web-report,.case-report) .dvh-compact-layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:18px;align-items:start}:is(.web-report,.case-report) .dvh-compact-layout .dvh-toggle-panel{padding:10px;margin:0;gap:12px}:is(.web-report,.case-report) .dvh-compact-layout .dvh-plan-toggles,:is(.web-report,.case-report) .dvh-compact-layout .dvh-structure-toggles{display:grid;grid-template-columns:minmax(0,1fr);gap:5px}:is(.web-report,.case-report) .dvh-compact-layout .dvh-toggle-panel fieldset{padding:0;margin:0}:is(.web-report,.case-report) .dvh-compact-layout .dvh-toggle-panel legend{margin-bottom:5px}:is(.web-report,.case-report) .dvh-compact-layout .dvh-structure-actions{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}:is(.web-report,.case-report) .dvh-compact-layout .dvh-structure-actions p{margin:0}:is(.web-report,.case-report) .dvh-compact-layout .dvh-structure-actions button{padding:3px 8px}:is(.web-report,.case-report) .dvh-compact-layout .unified-dvh-chart{width:100%;height:auto;margin:0}:is(.web-report,.case-report) .dvh-reading-help{margin:0 0 12px}:is(.web-report,.case-report) .dvh-reading-help>div{padding:8px 0}:is(.web-report,.case-report) .dvh-unified{padding:10px}@media(max-width:900px){:is(.web-report,.case-report) .dvh-compact-layout{grid-template-columns:minmax(0,1fr)}:is(.web-report,.case-report) .dvh-compact-layout .dvh-plan-toggles,:is(.web-report,.case-report) .dvh-compact-layout .dvh-structure-toggles{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}}
+:is(.web-report,.case-report) .dosimetric-table tbody td:nth-child(4),:is(.web-report,.case-report) .dosimetric-table tbody td:nth-child(5),:is(.web-report,.case-report) .dosimetric-table tbody td:nth-child(6){white-space:nowrap!important;overflow-wrap:normal!important;word-break:normal!important}:is(.web-report,.case-report) .dosimetric-table .plan-modulation-line{display:block}:is(.web-report,.case-report) .dosimetric-table .plan-result-heading{text-align:center;white-space:nowrap}:is(.web-report,.case-report) .dosimetric-table :is(th,td){padding:6px 8px!important}
+:is(.web-report,.case-report) .technical-goal-table{table-layout:auto!important;width:max-content!important;min-width:100%!important}:is(.web-report,.case-report) .technical-goal-table tbody td:nth-child(3),:is(.web-report,.case-report) .technical-goal-table tbody td:nth-child(4),:is(.web-report,.case-report) .scorecard-endpoint-table tbody td:nth-child(3),:is(.web-report,.case-report) .scorecard-endpoint-table tbody td:nth-child(4),:is(.web-report,.case-report) .scorecard-endpoint-table tbody td:nth-child(5),:is(.web-report,.case-report) .scorecard-endpoint-table tbody td:nth-child(6){white-space:nowrap!important;overflow-wrap:normal!important;word-break:normal!important}
+/* Final typography policy: 11 pt narrative, 10 pt tables/graphs, 16 pt section headings.
+   SVG text receives scale-compensated inline sizes from typography.js. */
+:is(.web-report,.case-report), :is(.web-report,.case-report) * { font-size: 11pt !important; }
+:is(.web-report,.case-report) :is(h1,h2,h3,h4,h5,h6),
+:is(.web-report,.case-report) :is(h1,h2,h3,h4,h5,h6) * { font-size: 16pt !important; }
+:is(.web-report,.case-report) table, :is(.web-report,.case-report) table * { font-size: 10pt !important; }
+
+/* Match table body emphasis to narrative; retain bold column headers. */
+:is(.web-report,.case-report) table tbody td, :is(.web-report,.case-report) table tbody td * { font-weight:400!important; font-family:"Siemens Sans",Arial,sans-serif!important; }
+
+/* Restore emphasis for scorecard results only. */
+:is(.web-report,.case-report) .dosimetric-table tbody td .endpoint-achieved-value, :is(.web-report,.case-report) .scorecard-endpoint-table tbody td .endpoint-achieved-value { font-weight:700!important; }
+
+:is(.web-report,.case-report) .endpoint-experiment-panel,:is(.web-report,.case-report) .endpoint-results-scroll{border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}.endpoint-experiment-panel{padding:0!important}.report-format-goal{white-space:nowrap!important}.report-format-scroll{max-width:100%;overflow-x:auto}.report-format-endpoint-grid{align-items:start}
+
+:is(.web-report,.case-report) :is(.two-size-endpoint-grid,.dvh-toggle-panel),:is(.web-report,.case-report) :is(.two-size-endpoint-grid,.dvh-toggle-panel) * {font-size:10pt!important}
+
+/* Shared endpoint presentation for protocol and imported/SRS scorecards. */
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table){table-layout:auto!important;width:max-content!important;min-width:100%!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) :is(th,td){padding:6px 8px!important;vertical-align:middle;overflow-wrap:normal!important;word-break:normal!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) .plan-modulation-line{display:block}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) .plan-result-heading{text-align:center;white-space:nowrap;min-width:70px}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) .endpoint-achieved-value{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:700!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody td.attainment-green{background:#5c9f78!important;color:white!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody td.attainment-yellow{background:#bd9138!important;color:white!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody td.attainment-red{background:#d26770!important;color:white!important}
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody td.attainment-gray{background:#f1f3f5!important;color:#56616d!important}
+:is(.web-report,.case-report) .scorecard-endpoint-table tbody td:nth-child(7){white-space:nowrap}
+
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) :is(.plan-result-heading,td[class*="attainment-"]){width:100px!important;min-width:100px!important;max-width:100px!important;box-sizing:border-box;white-space:nowrap}
+
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) .endpoint-plan-group-heading{white-space:normal!important;overflow-wrap:anywhere!important}
+
+:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody :is(td,th),:is(.web-report,.case-report) :is(.dosimetric-table,.scorecard-endpoint-table) tbody :is(td,th) *{white-space:nowrap!important}
+
+.two-size-endpoint-grid>div{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-items:start}.two-size-endpoint-grid{row-gap:8px}.two-size-endpoint-grid>div>p{margin:0 0 4px}.two-size-endpoint-grid>div>svg{align-self:start}
+
+:is(.web-report,.case-report) nav.library-return{display:block;margin:0 0 16px;padding:0;border:0;background:none;text-align:left} :is(.web-report,.case-report) nav.library-return a{font-size:11pt!important;font-weight:400;line-height:1.5!important;color:#a94700;text-decoration:underline;text-underline-offset:3px}
+
+:is(.web-report,.case-report) header :is(.publication-use-note,.report-use-disclaimer){display:block;margin:12px 0!important;padding:9px 12px!important;border:2px solid #b4232f!important;border-left:6px solid #b4232f!important;background:#fff2f2!important;color:#7a1d28!important;font-size:11pt!important;line-height:1.5!important;font-weight:700!important;letter-spacing:.01em;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+/* Use one CSS chevron; legacy open-state triangle glyphs must stay empty. */
+:is(.web-report,.case-report) details>summary{display:flex;align-items:center;gap:.7rem;list-style:none;cursor:pointer}
+:is(.web-report,.case-report) details>summary::-webkit-details-marker{display:none}
+:is(.web-report,.case-report) details>summary::marker{content:""}
+:is(.web-report,.case-report) details>summary::before{content:""!important;display:block;box-sizing:border-box;width:.45rem;height:.45rem;flex:0 0 .45rem;border-right:2px solid #ec6602;border-bottom:2px solid #ec6602;transform:rotate(-45deg);grid-column:auto;grid-row:auto}
+:is(.web-report,.case-report) details[open]>summary::before{content:""!important;transform:rotate(45deg)}

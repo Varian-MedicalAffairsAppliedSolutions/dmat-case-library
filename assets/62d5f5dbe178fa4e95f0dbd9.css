@@ -1,0 +1,5 @@
+/* Let the tallest wrapped caption set the image start for every card in its row. */
+.dose-volume-grid > .dose-volume-card{display:flex;flex-direction:column;align-self:stretch}
+.dose-volume-grid > .dose-volume-card > figcaption{flex:1 0 auto;min-width:0;overflow-wrap:anywhere}
+.dose-volume-grid > .dose-volume-card > .dose-volume-viewport,
+.dose-volume-grid > .dose-volume-card > .dose-card-controls{flex:none}

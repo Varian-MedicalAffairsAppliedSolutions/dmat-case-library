@@ -1,0 +1,27 @@
+@font-face{font-family:Report;src:url('../../assets/fonts/Siemens_Global_Roman_V2_006.woff2') format('woff2');font-display:swap}
+:root{--bg:#f4f6f7;--panel:#f4f6f7;--text:#26323b;--muted:#5c6973;--line:#ccd3d9;--mint:#a54600}
+html,body,main,.workspace,.settings-card{background:#f4f6f7;color:var(--text)}
+body{font-family:Report,Arial,sans-serif}body>header,main>aside,.view-heading{display:none!important}
+main.packaged{display:block;min-height:0}.workspace{padding:0 24px 8px}
+.stage{background:#20262c;border:1px solid #353e46;border-radius:9px;min-height:320px;aspect-ratio:16/8.3;max-height:650px}
+.stage-note span{background:#29323ce6;border-color:#586775;color:#e3e8ec}.zoom-hint{color:#bbc7cf}
+.view-tabs{background:#242d36ed;border-color:#56636e}.view-tabs button{color:#dfe7ec}.view-tabs .selected{background:#ec6602;color:white}
+button,select{background:#fff;color:#26323b;border-color:#cbd2d8}button:hover{color:#a54600;border-color:#a54600}
+#play{background:#ec6602;color:white}input[type=range],input[type=checkbox]{accent-color:#b64d00}
+.transport{padding:16px 0}.readouts{padding:14px 0;gap:12px}.readouts strong{font-size:18px}.readouts small{color:#5c6973}
+#timelineSegments button{background:#e6ebee;color:#34434e}#timelineSegments [aria-current=true]{outline-color:#b64d00}
+.settings-stack{margin:14px 0;gap:10px}.settings-card{background:#eef1f3;padding:12px 14px;border-radius:7px}.settings-card>summary{color:#34434e}
+footer,.anatomy{color:#64717a}footer{border-color:#d4dbe0;font-size:11px}
+#busyOverlay{background:#f4f6f7f5;color:#26323b}#busyOverlay::backdrop{background:#f4f6f7}
+@media(max-width:730px){.workspace{padding:0 12px 8px}.stage{min-height:320px}.transport{flex-wrap:wrap}.scrub{min-width:170px}.readouts{grid-template-columns:repeat(3,minmax(0,1fr))}.zoom-hint{font-size:9px}.view-tabs button{font-size:10px}.settings-sliders label{grid-template-columns:95px minmax(50px,1fr) 35px}}
+
+:root{color-scheme:light}html,body{min-height:0;height:auto}main.packaged{min-height:0}
+
+/* Light report-matched 3D canvas and camera controls. */
+.stage{background:#e9eef2;border-color:#d1d9df}
+.stage-note span{background:#f7f9fbe8;border-color:#c6d0d8;color:#465764}
+.zoom-hint{color:#536573}
+.view-tabs{background:#f7f9fbf0;border-color:#becbd5;box-shadow:0 2px 8px #52687912}
+.view-tabs button{color:#354957}.view-tabs button:hover{color:#a54600}.view-tabs .selected{background:#ec6602;color:#fff}
+
+.stage .scene-timer,.stage .scene-disclaimer{font-family:Report,Arial,sans-serif}

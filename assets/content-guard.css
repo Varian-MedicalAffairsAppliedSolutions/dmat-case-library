@@ -1,0 +1,8 @@
+/* Deterrents, not access control. Keep keyboard/touch viewer interactions available. */
+body{-webkit-user-select:none;user-select:none}
+img{-webkit-user-drag:none}
+.print-block-message{display:none}
+@media print{
+  body>*{display:none!important}
+  body>.print-block-message{display:block!important;color:#000;font:16px/1.5 Arial,sans-serif}
+}
