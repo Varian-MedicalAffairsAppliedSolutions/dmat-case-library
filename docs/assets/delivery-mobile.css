@@ -1,0 +1,83 @@
+/* Keep camera choices outside the canvas so they never obscure the scene. */
+.delivery-fullscreen-toggle{position:absolute;top:8px;right:8px;z-index:5;display:grid;place-items:center;width:44px;height:44px;padding:10px;border:1px solid #bac8d3;border-radius:6px;background:#f7f9fcf2;color:#33485b;touch-action:manipulation}
+.delivery-fullscreen-toggle svg{display:block;pointer-events:none}
+.delivery-fullscreen-toggle .fullscreen-collapse,.delivery-fullscreen-toggle[aria-pressed=true] .fullscreen-expand{display:none}
+.delivery-fullscreen-toggle[aria-pressed=true] .fullscreen-collapse{display:block}
+.stage .stage-note{max-width:calc(100% - 76px)}
+.workspace>.view-tabs{position:static;transform:none;max-width:100%;width:fit-content;margin:4px 0;padding:3px;white-space:normal;gap:2px;justify-content:flex-start}
+.workspace>.view-tabs button{min-height:34px;font-size:13px;padding:5px 10px}
+.workspace>.view-tabs [data-scene-theme][aria-pressed=true]{background:#176977;color:white}
+.workspace>.view-tabs .scene-theme-controls{border-color:#bac8d3;flex-wrap:wrap}
+.workspace>.view-tabs .scene-theme-controls>span{color:#40566a}
+.stage .zoom-hint{top:auto;bottom:10px;left:12px;right:12px;max-width:none;text-align:center}
+.delivery-fullscreen-open{overflow:hidden!important}
+.delivery-stage-shell.delivery-fullscreen{position:fixed!important;inset:0!important;width:100%!important;height:100vh!important;height:100dvh!important;z-index:2147483647;background:#f4f6f7;min-height:0;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.delivery-stage-shell.delivery-fullscreen #delivery-frame{width:100%;height:100%!important;visibility:visible}
+html.delivery-view-expanded{height:100%;overflow-y:auto!important}
+.delivery-view-expanded .delivery-fullscreen-toggle{position:fixed;top:max(8px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));z-index:10}
+.delivery-view-expanded .stage{height:55vh;height:55dvh;min-height:220px;max-height:none;aspect-ratio:auto}
+@media(max-width:730px){
+ .workspace{padding:0 8px 8px}
+ .stage{min-height:260px;aspect-ratio:1/1;max-height:420px}
+ .stage .stage-note{top:8px;left:8px;width:auto;max-width:calc(100% - 68px);grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:6px}
+ .stage .scene-plan,.stage .scene-timer{padding:5px 8px;min-width:0}
+ .stage .scene-timer{grid-column:auto}
+ .stage .scene-plan>strong,.stage .scene-timer strong{font-size:14px}
+ .stage .scene-timer div small{font-size:10px}
+ .stage .zoom-hint{display:none}
+ .workspace>.view-tabs button{flex:0 1 auto;min-height:44px;font-size:13px;padding:6px 8px}
+ .workspace>.view-tabs .scene-theme-controls{margin:0;padding:0;border:0}
+ .transport{display:flex;flex-wrap:wrap;gap:6px;padding:6px 0}
+ .transport>button{width:48px;height:48px;flex-shrink:0;font-size:20px}
+ .transport .scrub{order:5;flex:1 0 100%;min-width:0}
+ .transport .speed-label{margin-left:auto;font-size:13px}
+ .workspace select{min-height:44px;font-size:16px}
+ .transport .loop{display:flex;align-items:center;min-height:44px;font-size:13px}
+ .workspace input[type=range]{min-height:36px;margin:0}
+ .workspace input[type=checkbox]{width:20px;height:20px;flex-shrink:0}
+ .settings-toggles{gap:8px}
+ .settings-toggles label,.settings-card summary{min-height:44px;align-content:center;font-size:13px}
+ .settings-toggles button{min-height:44px;font-size:13px}
+ .readouts{gap:10px}.readouts strong{font-size:16px}
+ .viewer-disclaimer{font-size:11px;margin:4px 0}
+}
+@media(max-height:500px) and (orientation:landscape){
+ .delivery-view-expanded .stage{height:65vh;height:65dvh;min-height:180px}
+}
+
+/* Compact spacing between the scene, camera menu, playback and readouts. */
+.workspace{padding:0 12px 6px}
+.viewer-disclaimer{margin:4px 0;font-size:11px;line-height:1.4}
+.transport{padding:6px 0;gap:8px}
+.readouts{padding:8px 0;gap:8px}
+.readouts small{margin-bottom:3px}
+.settings-stack{margin:8px 0;gap:6px}
+.settings-card{margin-top:6px;margin-bottom:6px;padding:8px 10px}
+#timelineSegmentLabel{margin-top:2px}
+@media(pointer:coarse){.workspace>.view-tabs button{min-height:44px}}
+@media(max-width:730px){.workspace{padding:0 8px 6px}.transport{gap:6px}}
+
+/* A compact control strip keeps playback beside the timeline, even on phones. */
+.workspace>.view-tabs{padding:2px;margin:4px 0;gap:1px;box-shadow:none}
+.workspace>.view-tabs button{min-height:30px;padding:3px 7px;font-size:12px}
+.workspace>.view-tabs .scene-theme-controls{gap:1px;margin-left:3px;padding-left:4px}
+.workspace>.view-tabs .scene-theme-controls>span{display:none}
+.workspace .transport{display:grid;grid-template-columns:36px 32px minmax(0,1fr) auto;gap:6px;padding:4px 0;align-items:center}
+.workspace .transport>button{width:100%;height:36px;font-size:16px;margin-top:0}
+.workspace .transport .scrub{order:0;min-width:0}
+.workspace .transport .speed-label{display:flex;flex-direction:column;align-items:center;gap:0;margin:0;font-size:10px}
+.workspace .transport .speed-label select{min-height:32px;height:32px;padding:3px;margin:0;font-size:13px;max-width:64px}
+.workspace .transport input[type=range]{min-height:22px;height:22px;margin:0;display:block}
+.workspace .scrub>label{font-size:10px}
+.workspace #timelineSegments{margin-top:1px}
+.workspace #timelineSegments button{padding:2px 1px;font-size:9px;min-height:20px}
+.workspace #timelineSegmentLabel{font-size:9px;min-height:12px;margin-top:1px}
+.workspace .readouts{padding:6px 0;gap:4px 8px}
+.workspace .readouts small{font-size:8px;margin-bottom:1px}
+.workspace .readouts strong{font-size:15px}
+.workspace .viewer-disclaimer{margin:5px 0 2px;font-size:10px;line-height:1.35}
+@media(max-width:400px){
+ .workspace .transport{grid-template-columns:34px 28px minmax(0,1fr) 48px;gap:4px}
+ .workspace .transport .speed-label select{max-width:48px;padding:2px;font-size:12px}
+ .workspace>.view-tabs button{padding:3px 6px;font-size:11px}
+}
