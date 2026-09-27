@@ -1,4 +1,4 @@
-/* Reversible image obfuscation; this is not encryption or access control. */
+/* Images bundled for easier loading. */
 (() => {
   if (window.DmatBinaryImages) return;
   const pending = new Map();
