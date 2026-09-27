@@ -1,11 +1,64 @@
 Delivery Studio third-party components
 
-Three.js — MIT — https://github.com/mrdoob/three.js
-three-mesh-bvh — MIT — https://github.com/gkjohnson/three-mesh-bvh
-dicom-parser — MIT — https://github.com/cornerstonejs/dicomParser
-esbuild (build tooling) — MIT — https://github.com/evanw/esbuild
-Playwright (test tooling) — Apache-2.0 — https://github.com/microsoft/playwright
+Three.js 0.186.0 — MIT — https://github.com/mrdoob/three.js
+three-mesh-bvh 0.9.15 — MIT — https://github.com/gkjohnson/three-mesh-bvh
+dicom-parser 1.8.12 — MIT — https://github.com/cornerstonejs/dicomParser
+Mediabunny 1.58.1 — MPL-2.0 — https://github.com/Vanilagy/mediabunny
+esbuild 0.28.2 (build tooling) — MIT — https://github.com/evanw/esbuild
+Playwright 1.63.0 (test tooling) — Apache-2.0 — https://github.com/microsoft/playwright
 
 Bundled runtime license texts follow in licenses/. dicom-parser's copyright and full MIT license are in licenses/dicom-parser.txt.
 
 fflate 0.8.2 (bundled with Three.js) — MIT — https://github.com/101arrowz/fflate
+
+Mediabunny
+Copyright (c) 2026-present, Vanilagy and contributors
+License: Mozilla Public License 2.0; full text: licenses/mediabunny.txt.
+Bundled module notices: app.js.LEGAL.txt.
+Upstream source: https://github.com/Vanilagy/mediabunny
+
+MPL-2.0 allows commercial use. Distribution of its executable form also
+requires making the corresponding covered source available and informing
+recipients how to obtain it. Modifications to covered source remain subject
+to MPL-2.0. See sections 3.1-3.4 of licenses/mediabunny.txt.
+
+Corresponding source for the unmodified Mediabunny 1.58.1 library used here:
+https://registry.npmjs.org/mediabunny/-/mediabunny-1.58.1.tgz
+Download and extract this archive; package/src/ contains the source and
+package/LICENSE contains MPL-2.0. This source remains available under MPL-2.0.
+
+The original build lockfile, installed package, and source-map inputs were
+checked against the official package. The Mediabunny generated code in all
+three packaged viewers matches that build; no library modifications were
+found.
+
+Commercial use is permitted by the listed MIT, MPL-2.0, and Apache-2.0
+licenses, subject to their respective terms. Preserve copyright and license
+notices. The MPL source requirements apply to Mediabunny; they do not require
+licensing separate application files under MPL-2.0. Build and test tools are
+listed for attribution and are not shipped as viewer runtimes.
+
+fflate 0.8.2 — full license
+Source: https://github.com/101arrowz/fflate/tree/v0.8.2
+
+MIT License
+
+Copyright (c) 2023 Arjun Barrett
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
