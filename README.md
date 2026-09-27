@@ -2,12 +2,13 @@
 
 **510(k) pending. Not available for sale in any market and no guarantee of commercialization or feature availability.**
 
-<table>
-  <tr>
-    <td><strong><a href="https://varian-medicalaffairsappliedsolutions.github.io/dmat-case-library/index.html">View the DMAT Case Library website</a></strong></td>
-    <td><a href="https://varian-medicalaffairsappliedsolutions.github.io/dmat-case-library/index.html"><img src="docs/assets/anatomical-navigator.png" alt="Anatomical navigator for selecting a body region in the DMAT Case Library" width="300"></a></td>
-  </tr>
-</table>
+**[Explore the DMAT Case Library →](https://varian-medicalaffairsappliedsolutions.github.io/dmat-case-library/index.html)**
+
+<p align="center">
+  <a href="https://varian-medicalaffairsappliedsolutions.github.io/dmat-case-library/index.html">
+    <img src="docs/assets/anatomical-navigator.png" alt="Anatomical navigator for selecting a body region in the DMAT Case Library" width="420">
+  </a>
+</p>
 
 This repository stores the webpages and supporting assets in [`docs/`](docs/) for publication through **GitHub Pages (`github.io`)** as the DMAT Case Library. The website is an interactive educational showcase of **Dynamic Modulated Arc Therapy (DMAT)** capabilities and the **time–quality navigation** concept across different anatomical sites and planning scenarios. The reports bring together dose distributions, dose–volume histograms (DVHs), selected dosimetric endpoints, and delivery-time information to make planning trade-offs easier to explore.
 
