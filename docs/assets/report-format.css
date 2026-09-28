@@ -53,3 +53,29 @@
 :is(.web-report,.case-report) details>summary::marker{content:""}
 :is(.web-report,.case-report) details>summary::before{content:""!important;display:block;box-sizing:border-box;width:.45rem;height:.45rem;flex:0 0 .45rem;border-right:2px solid #ec6602;border-bottom:2px solid #ec6602;transform:rotate(-45deg);grid-column:auto;grid-row:auto}
 :is(.web-report,.case-report) details[open]>summary::before{content:""!important;transform:rotate(45deg)}
+
+/* Phone layouts reserve space for labels instead of covering the images. */
+@media (max-width:700px) {
+  :is(.web-report,.case-report) { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  :is(.web-report,.case-report) :is(.dose-volume-card,.dose-sync-card)>figcaption {
+    position:static!important;width:auto!important;min-height:3em;margin:0!important;padding:4px!important;
+    color:#26323b!important;text-shadow:none!important;box-sizing:border-box;
+  }
+  :is(.web-report,.case-report) :is(.dose-volume-card,.dose-sync-card)>figcaption strong {color:inherit!important;font-size:12px!important;line-height:1.35!important;}
+  :is(.web-report,.case-report) .dose-volume-viewport {aspect-ratio:auto!important;min-height:0!important;height:auto!important;}
+  :is(.web-report,.case-report) .dose-volume-stage {position:relative;inset:auto;aspect-ratio:1/1;width:100%;}
+  :is(.web-report,.case-report) .dose-volume-image {position:absolute;inset:0;}
+  :is(.web-report,.case-report) .dose-volume-overlay {
+    position:static;max-width:none;width:auto;min-height:3em;padding:5px 3px;box-sizing:border-box;
+    justify-items:start;text-align:left;background:#f4f6f7;color:#26323b;text-shadow:none;border:0;border-radius:0;
+  }
+  :is(.web-report,.case-report) .dose-volume-overlay :is(output,span) {font-size:11px!important;line-height:1.35!important;overflow-wrap:anywhere;}
+  :is(.web-report,.case-report) .clinical-goal-comparison {padding:6px!important;overflow:visible;}
+  :is(.web-report,.case-report) .two-size-endpoint-grid {grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;}
+  :is(.web-report,.case-report) .two-size-endpoint-grid>div>strong {overflow-wrap:anywhere;font-size:12px!important;line-height:1.35!important;}
+  :is(.web-report,.case-report) .two-size-endpoint-grid>div>p {font-size:11px!important;line-height:1.4!important;}
+}
+/* Older iOS versions without subgrid still need independent, flowing cards. */
+@supports not (grid-template-rows:subgrid) {
+  .two-size-endpoint-grid>div {display:flex;flex-direction:column;grid-row:auto;}
+}
