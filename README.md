@@ -46,8 +46,53 @@ For demonstration only. Does not reflect actual machine specifications, dimensio
 
 Illustrative only. The machine visualization is based on publicly available data and does not represent actual machine specifications or dimensions.
 
-Lightweight viewer: dose grid and accumulation caches omitted; accumulation disabled.
+Viewer capabilities depend on the case package. Some lightweight viewers omit dose grids and accumulation caches and disable accumulation. Playback-only viewers may preserve prepared dose contributions while omitting the source dose grid and illustrative exposure cache. All dose animation is illustrative and unsuitable for dose measurement or clinical decision-making.
 
 ## Third-party components
 
 The delivery viewers include third-party components with their own copyright notices and license terms. See the `THIRD-PARTY-NOTICES.txt` and `licenses/` files within each `delivery-viewer` directory under `docs/`. Those notices and terms remain applicable.
+
+## Analytics consent
+
+The reporting purpose is to count page visits, show when visits happen, and report
+approximate visitor country/region/city. GA4 derives location from the visitor's
+internet connection; the site does not request browser geolocation. City availability
+depends on GA4's regional location settings and reporting thresholds. GA4 also
+collects standard device/session metadata, as described in the consent notice.
+For minimal measurement, turn off optional Enhanced measurement events in the
+GA4 web stream (scrolls, outbound clicks, search, video, downloads, and forms),
+and set the property's reporting time zone. These are Analytics account settings.
+
+All pages use `docs/assets/analytics-consent.js` and its stylesheet. Google Analytics
+(`G-82757TJGTE`) loads only after explicit acceptance or a valid saved acceptance.
+Accept and Reject have equal prominence. Cookie settings allows withdrawal, which
+disables Analytics, clears this implementation's cookies, and reloads the page to
+unload Google's listeners. Embedded viewers do not load Analytics; standalone
+viewers use the same consent controls. Choices are scoped to this site's base path
+and remembered for 180 days. Missing, invalid, expired, or inaccessible stored
+choices default to Analytics off. No Google consent pings are sent before acceptance.
+
+Advertising consent stays denied, Google signals are disabled, and the configured
+page location omits query strings and fragments. Cookies use a site-specific prefix,
+host-only domain, site base path, and 180-day maximum age without renewal.
+
+The consent details link to the Cancer Care privacy notice used by the referring
+Medical Affairs practitioner-aids page and its published privacy contact. Consent
+is collected independently here: a referral from siemens-healthineers.com does not
+transfer its consent cookies or local storage to github.io. Reusing the corporate
+consent choice requires an approved cross-domain integration configured by the
+corporate consent platform owner; a referring URL is not proof of consent. Although
+the public privacy notice links to TrustArc, the current Medical Affairs page source
+loads Usercentrics; the web team should provide the configuration approved for this
+site rather than copying the notice's consent-center link as an integration.
+
+Before publishing, confirm that the corporate notice covers this site and its
+Analytics use, confirm the Google Analytics processing/transfer arrangements
+and property retention settings, and review enhanced measurement settings (especially
+form interactions, site search, and outbound URLs) for unintended data collection.
+The banner is a technical consent control, not a complete GDPR compliance assessment.
+GitHub's hosting data processing is separate from optional Google Analytics.
+
+Run `node --test tests/analytics-consent.test.cjs` for consent lifecycle checks.
+After deployment, verify in browser Network tools that no Google requests occur
+before acceptance or after rejection, and verify accepted visits in GA Realtime.

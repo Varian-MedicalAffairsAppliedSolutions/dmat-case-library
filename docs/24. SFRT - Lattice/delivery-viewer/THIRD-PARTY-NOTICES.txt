@@ -1,0 +1,11 @@
+Delivery Studio third-party components
+
+Three.js — MIT — https://github.com/mrdoob/three.js
+three-mesh-bvh — MIT — https://github.com/gkjohnson/three-mesh-bvh
+dicom-parser — MIT — https://github.com/cornerstonejs/dicomParser
+esbuild (build tooling) — MIT — https://github.com/evanw/esbuild
+Playwright (test tooling) — Apache-2.0 — https://github.com/microsoft/playwright
+
+Bundled runtime license texts follow in licenses/. dicom-parser's copyright and full MIT license are in licenses/dicom-parser.txt.
+
+fflate 0.8.2 (bundled with Three.js) — MIT — https://github.com/101arrowz/fflate

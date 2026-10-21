@@ -159,6 +159,21 @@ const css="html{scroll-behavior:smooth}\n:is(body.web-report,.case-report) heade
     }
    }
   }
+  // Endpoint tables start collapsed; plotting sections remain visible.
+  for(const fold of root.querySelectorAll('details[data-report-fold="dosimetric-endpoints"],details[data-report-fold="scorecard-endpoints"]')){
+   if(!fold.hasAttribute('data-endpoint-table-default-applied')){
+    fold.setAttribute('data-endpoint-table-default-applied','true');fold.open=false;
+   }
+  }
+  // Expand plots on first initialization, then preserve the reader's fold choices.
+  for(const heading of root.querySelectorAll('h3')){
+   if(heading.textContent.trim()!=='Scored endpoint values versus delivery time')continue;
+   for(let node=heading.parentElement;node&&node!==root;node=node.parentElement){
+    if(node.tagName==='DETAILS'&&!node.hasAttribute('data-endpoint-plots-default-applied')){
+     node.setAttribute('data-endpoint-plots-default-applied','true');node.open=true;
+    }
+   }
+  }
   // Delivery demos are optional report sections, immediately before technical details.
   const demo=root.querySelector('#delivery-simulation');
   if(demo?.querySelector('#delivery-frame')){

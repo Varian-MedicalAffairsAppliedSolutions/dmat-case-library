@@ -1,0 +1,15 @@
+#analytics-consent{font:16px/1.5 Arial,sans-serif;color:#202830;position:relative;z-index:2147483647}
+#analytics-consent [hidden]{display:none!important}
+#analytics-consent .ac-panel{position:fixed;bottom:64px;left:16px;right:16px;max-width:680px;max-height:70vh;overflow:auto;padding:22px;background:#fff;border:1px solid #7b858e;border-radius:8px;box-shadow:0 4px 24px #0003;box-sizing:border-box}
+#analytics-consent h2{font:bold 21px/1.3 Arial,sans-serif;margin:0 0 10px;color:#202830}
+#analytics-consent p{font:16px/1.5 Arial,sans-serif;margin:10px 0;color:#202830}
+#analytics-consent button{font:bold 15px/1.4 Arial,sans-serif;background:#fff;color:#243847;border:2px solid #243847;border-radius:4px;padding:10px 16px;cursor:pointer;min-height:44px}
+#analytics-consent .ac-actions{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+#analytics-consent .ac-actions button{flex:1}
+#analytics-consent .ac-settings{position:fixed;bottom:12px;left:16px;box-shadow:0 2px 8px #0002}
+#analytics-consent summary{cursor:pointer;text-decoration:underline;padding:8px 0}
+#analytics-consent a{color:#155780;text-decoration:underline}
+#analytics-consent :is(button,a,summary):focus-visible{outline:3px solid #ec6602;outline-offset:3px}
+#analytics-consent button:hover{background:#eef3f6}
+#analytics-consent .ac-close{margin-top:12px}
+@media print{#analytics-consent{display:none}}
